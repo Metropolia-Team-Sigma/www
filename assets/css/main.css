@@ -3756,7 +3756,7 @@
 			text-decoration: none;
 		}
 
-		#banner video {
+	   	#banner video {
 			-moz-transform: translateX(50%) translateY(50%);
 			-webkit-transform: translateX(50%) translateY(50%);
 			-ms-transform: translateX(50%) translateY(50%);
@@ -3776,16 +3776,16 @@
 			-webkit-transition: opacity 3s ease;
 			-ms-transition: opacity 3s ease;
 			transition: opacity 3s ease;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
+			-moz-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			-ms-transition-delay: 0.5s;
+			transition-delay: 0.5s;
 			content: '';
 			display: block;
-			background-color: rgba(0, 0, 0, 0.75);
+			background-color: rgba(0, 0, 0, 0);
 			height: 100%;
 			left: 0;
-			opacity: 0.45;
+			opacity: 1;
 			position: absolute;
 			top: 0;
 			width: 100%;

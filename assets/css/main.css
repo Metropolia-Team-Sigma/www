@@ -234,3 +234,12 @@
 	width: 500px;
 	justify-content: center;
 }
+
+h2{
+    text-align: center;
+}
+
+.content{
+    margin: 90px;
+    border: 1px solid #4CAF50;
+}

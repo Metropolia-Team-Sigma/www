@@ -99,6 +99,7 @@ body
     background-image: url(https://wallpaperplay.com/walls/full/2/b/a/38968.jpg);
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
+    text-align: center;
 }
 
 #menuToggle
@@ -231,14 +232,10 @@ body
 
 .image.fit {
 
-
 }
 
 
-.h2 {
-    text-align: center;
 
-}
 
 .content{
     margin: 90px;

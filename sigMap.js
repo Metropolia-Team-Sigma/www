@@ -17,3 +17,11 @@ var circle = L.circle([60.223970, 24.75809], {
     radius: 50
 }).addTo(mymap);
 
+const myIcon = L.icon({
+    iconUrl: "sigma-logo.png",
+    iconSize: [40, 95],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+
+});
+L.marker([60.223970, 24.75809], {icon: myIcon}).addTo(mymap);

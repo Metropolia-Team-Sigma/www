@@ -2,6 +2,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Taviraj:300,400,700,300i,400i,700i");
 
+
 #banner {
     -moz-justify-content: center;
     -webkit-justify-content: center;
@@ -253,3 +254,9 @@ body
     width: 70%;
 
 }
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+

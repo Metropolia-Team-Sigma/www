@@ -96,7 +96,8 @@ body
     padding: 0;
 
 
-    background-image: url(https://wallpaperplay.com/walls/full/2/b/a/38968.jpg);
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
     text-align: center;
@@ -314,3 +315,6 @@ body {
         float: none;
     }
 }
+
+
+

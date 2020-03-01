@@ -86,8 +86,12 @@ body.is-loading #banner:before {
 }
 
 .image.fit img {
-    width: 100%;
+    width: 100%;4
+    border: 0px solid #f0f0f0;
+    border-bottom: 130px solid #fff8f8;
 }
+
+
 
 
 body
@@ -241,10 +245,15 @@ body
 .content{
     margin: 90px;
     border: 1px solid #fffdf5;
+    width: 400px;
 }
 
 #sigHome {
     height: 400px;
+    padding:5px;
+    border:8px solid #999999;
+    background-color: #e6e6e6;
+
 }
 
 #one {

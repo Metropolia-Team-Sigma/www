@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    display: block;
 }
 
 body {
@@ -40,6 +41,9 @@ body {
     float: left;
     width: 33.33%;
     padding: 15px;
+
+
+
 }
 
 /* Clear floats after the columns */
@@ -54,4 +58,33 @@ body {
     .column {
         width: 100%;
     }
+}
+#sigHome {
+
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    border: 3px solid #8AC007;
+}
+
+.column {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+
+.row {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }

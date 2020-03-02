@@ -89,6 +89,8 @@ body.is-loading #banner:before {
     width: 100%;4
     border: 0px solid #f0f0f0;
     border-bottom: 130px solid #fff8f8;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 
@@ -250,9 +252,11 @@ body
 
 #sigHome {
     height: 400px;
-    padding:5px;
-    border:8px solid #999999;
-    background-color: #e6e6e6;
+    padding: 5px;
+    border: 8px solid #ffffff;
+    background-color: #fff;
+    border-radius: 25px;
+
 
 }
 

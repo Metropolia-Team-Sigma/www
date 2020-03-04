@@ -258,7 +258,6 @@ body
 }
 
 #one {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
@@ -363,11 +362,9 @@ body {
     text-align: match-parent;
 }
 
+
 .video {
-    position: absolute;
-    right: 500px;
-    width: 1000px;
-    height: 600px;
+
 }
 
 hr {

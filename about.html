@@ -16,6 +16,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
             integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
             crossorigin=""></script>
+    <link rel="stylesheet" href="assets/css/lightbox.css">
 
 
 <body>
@@ -37,29 +38,29 @@
                     <img src="https://i.linuswillner.me/NZUzBXp.gif" alt=""/>
                 </div>
                 <div id="container">
-                <div class="content">
-                    <header class="align-center">
-                        <h2>Mikä on Sigma</h2>
-                    </header>
-                    <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor
-                        velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat
-                        lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at
-                        egestas urna ornare.</p>
-                    <p>Vivamus fermentum nibh vel pharetra blandit. Cras a purus urna. Sed et libero ex. Orci varius
-                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse id
-                        hendrerit felis. Nulla viverra tempor dui at congue. Pellentesque quis nulla ornare, congue nisi
-                        id, finibus nulla. Aliquam sit amet hendrerit purus. Donec libero massa, posuere fermentum eros
-                        sit amet, maximus fringilla augue. Maecenas at rhoncus lorem. Vivamus ultricies consequat est,
-                        efficitur convallis libero. Vivamus rutrum semper mauris, vitae consequat eros tempor ac.
-                        Pellentesque et ornare sapien</p>
-                </div>
-                <div class="kuva">
-                    <img src="images/bg.jpg"  style="height: 500px"/>
-                </div>
+                    <div class="content">
+                        <header class="align-center">
+                            <h2>Mikä on Sigma</h2>
+                        </header>
+                        <p> Sigma on päästä päähän salattu chat-sovellus joka takaa viesteillesi täydellisen
+                            anonymiteetin. Käyttäen korkealaatuisia salausalgoritmeja ja viimeisimpiä
+                            suojaustekniikoita, viestisi pysyvät turvassa nyt ja tulevaisuudessa.</p>
+                    </div>
+                    <div class="video">
+                        <video width="600" height="600" style="width: 1000px;" controls>
+                            <source src="movie.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
 
             </div>
         </div>
+    </div>
+    <div class="kuva">
+        <a href="images/banner.png" data-lightbox="banner" data-title="The proud fathers of Sigma"><img
+                src="images/banner.png"/></a>
     </div>
     <div id="sigHome"></div>
 </section>
@@ -67,5 +68,6 @@
 
 </footer>
 <script src="sigMap.js"></script>
+<script src="assets/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>

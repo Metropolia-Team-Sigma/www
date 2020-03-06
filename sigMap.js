@@ -15,7 +15,7 @@ const myIcon = L.icon({
 
 });
 var marker = L.marker([60.223970, 24.75809], {icon: myIcon}).addTo(mymap);
-marker.bindPopup("<b>The home of Sigma</b>").openPopup();
+marker.bindPopup("<b style=\"font-size: 23px;font-family: 'Trade Winds', cursive;\">The home of Sigma</b>").openPopup();
 
 
 

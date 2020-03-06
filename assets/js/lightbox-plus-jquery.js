@@ -11160,6 +11160,7 @@ return jQuery;
 lightbox.option({
 	'resizeDuration': 1000,
 	'wrapAround': true,
-	'ïmageFadeDuration': 600
+	'ïmageFadeDuration': 600,
+	'disableScrolling':	true
 })
 

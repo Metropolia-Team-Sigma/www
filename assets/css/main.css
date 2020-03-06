@@ -270,7 +270,7 @@ body
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trade Winds', cursive;
 }
 
 .header {
@@ -336,8 +336,12 @@ body {
     border-radius: 25px;
     width: 100%;
     height: 540px;
+    box-shadow: 2px 2px 2px
+    #ff8989;
 
 }
+
+
 
 .active {
     margin-top: 22px;
@@ -354,12 +358,12 @@ body {
 
 .content {
     padding : 5em;
-    width  : 29em;
+    width  : 48em;
     text-align: match-parent;
     float:left;
     margin-right:20px;
-    margin-top: 29px;
-    margin-left: 50px;
+    margin-top: 8px;
+    margin-left: -4px;
 }
 
 
@@ -369,7 +373,6 @@ hr {
     box-shadow: inset 0 12px 12px -12px rgba(255, 255, 255, 0.5);
 
 }
-
 
 #container {
     overflow:hidden;
@@ -395,4 +398,12 @@ hr {
         width:auto;
         border:0;
     }
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: xx-large;
 }

@@ -329,7 +329,7 @@ body {
 
 
 
-.kuva img {
+.kuva img  {
     width: 50%;
     height: 703px;
     margin-bottom: 120px;
@@ -341,7 +341,9 @@ body {
 
 }
 
-
+.kuva {
+    margin-top: 120px;
+}
 
 .active {
     margin-top: 22px;

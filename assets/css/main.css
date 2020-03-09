@@ -92,7 +92,6 @@ body.is-loading #banner:before {
     border-bottom: 130px solid #fff8f8;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    margin-bottom: 120px;
 }
 
 
@@ -252,11 +251,6 @@ body
     border: 8px solid #ffffff;
     background-color: #fff;
     border-radius: 25px;
-    margin-top: 120px;
-    margin-top: 120px;
-    margin-bottom: 120px;
-
-
 }
 
 #one {
@@ -332,8 +326,6 @@ body {
 .kuva img  {
     width: 50%;
     height: 703px;
-    margin-bottom: 120px;
-    margin-top: 120px;
     border-radius: 25px;
     box-shadow: 2px 2px 2px
     #ff8989;
@@ -342,7 +334,6 @@ body {
 }
 
 .kuva {
-    margin-top: 120px;
 }
 
 .active {
@@ -378,8 +369,6 @@ hr {
 
 #container {
     overflow:hidden;
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 #container div {
@@ -393,7 +382,12 @@ hr {
     margin:10px;
 }
 
-@media screen and (max-width: 1900px) {
+.player {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 2000px) {
     .content {
         float: none;
         margin-right:0;

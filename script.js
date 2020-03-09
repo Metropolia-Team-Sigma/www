@@ -1,8 +1,7 @@
 
-let navWrapper = document.querySelector('.nav-wrapper'),
-			navToogler =  document.querySelector('.nav-toogler')
+const navWrapper = document.querySelector('.nav-wrapper')
+const navToogler = document.querySelector('.nav-toogler')
 
-		navToogler.addEventListener('click', function (event) {
-			navWrapper.classList.toggle('active')
-		})
-
+navToogler.addEventListener('click', function (event) {
+  navWrapper.classList.toggle('active')
+})

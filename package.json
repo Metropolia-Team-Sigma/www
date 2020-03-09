@@ -1,0 +1,29 @@
+{
+  "name": "sigma-www",
+  "version": "1.0.0",
+  "description": "Sigma website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "scripts": {
+    "test": "eslint .",
+    "test-fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metropolia-Team-Sigma/www.git"
+  },
+  "author": "See authors in LICENSE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Metropolia-Team-Sigma/www/issues"
+  },
+  "homepage": "https://github.com/Metropolia-Team-Sigma/www#readme"
+}

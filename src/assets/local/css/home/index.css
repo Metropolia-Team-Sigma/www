@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import './media-queries.css';
+@import '../shared/menu/menu.css';
+
+#banner {
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url('../../images/banner.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: #ffffff;
+  font-family: 'Sen', sans-serif;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+    /* Flex direction is defined in media queries (Dependent on screen width) */
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+.content {
+  flex: 1 0;
+  justify-content: space-evenly;
+  padding: 3em;
+  text-align: match-parent;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}

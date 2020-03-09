@@ -1,0 +1,30 @@
+@import 'toggle.css';
+
+#menu {
+  display: flex;
+  position: absolute;
+  width: 50vw;
+  margin: -100px 0 0 -50px;
+  padding-top: 56px;
+  padding-left: 100px;
+
+  background: transparent;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  overflow: hidden;
+}
+
+#menu li {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}

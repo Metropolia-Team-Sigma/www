@@ -1,0 +1,23 @@
+@media screen and (max-width: 800px) {
+  #banner {
+    display: none;
+  }
+}
+
+/* Low screen width */
+@media screen and (max-width: 1420px) {
+  main {
+    flex-direction: column;
+  }
+
+  .content.video {
+    padding-top: 0px;
+  }
+}
+
+/* High screen width */
+@media screen and (min-width: 1420px) {
+  main {
+    flex-direction: row;
+  }
+}

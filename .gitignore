@@ -1,3 +1,6 @@
 # NPM
 node_modules
 npm-debug.log
+
+# Deployment settings
+.env

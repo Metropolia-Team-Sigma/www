@@ -67,16 +67,9 @@
 #menuToggle a {
   transition: all 0.3s ease;
   border-radius: 10px;
+  margin-right: 5px;
 }
 
-@media screen and (max-width: 800px) {
-  #menuToggle a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-}
-
-@media screen and (min-width: 800px) {
-  #menuToggle a:hover {
-    color: rgb(131, 131, 131);
-  }
+#menuToggle a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }

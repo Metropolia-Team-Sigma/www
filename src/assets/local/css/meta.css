@@ -23,9 +23,11 @@
 
 .content {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
-.content a:not(.leaflet-control-zoom-in):not(.leaflet-control-zoom-out) {
+/* Avoid messing up map buttons */
+.content a.link {
   color: #ffffff;
 }
 
@@ -49,4 +51,8 @@ hr {
   border: 8px solid #ffffff;
   background-color: #fff;
   border-radius: 25px;
+}
+
+.map {
+  padding-bottom: 2em;
 }

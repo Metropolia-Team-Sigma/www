@@ -1,0 +1,61 @@
+/* Shared content styles */
+
+/* Header */
+
+header {
+  height: 7.5vh;
+  width: auto;
+  background-color: var(--header-color);
+}
+
+/* Page content */
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  /* Flex direction is defined by media queries (Dependent on screen width) */
+}
+
+h2 {
+  font-family: 'Sen', sans-serif;
+  font-size: xx-large;
+  margin: 15px;
+}
+
+
+p {
+  font-size: 18px;
+  max-width: 90%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  flex: 1 0;
+  padding: 2em;
+  text-align: match-parent;
+}
+
+/* Media queries */
+
+/* Low screen width */
+@media screen and (max-width: 1420px) {
+  section {
+    flex-direction: column;
+  }
+
+  .content.video {
+    padding-top: 0px;
+  }
+}
+
+/* High screen width */
+@media screen and (min-width: 1420px) {
+  section {
+    flex-direction: row;
+  }
+}

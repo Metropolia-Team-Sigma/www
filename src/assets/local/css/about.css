@@ -1,0 +1,62 @@
+@import 'shared/global.css';
+@import 'shared/menu.css';
+@import 'shared/content.css';
+@import 'shared/footer.css';
+
+/*
+  White header:
+  --menu-color: #000000;
+  --header-color: #ffffff;
+  --menu-item-hover-color: rgba(0, 0, 0, 0.1);
+
+  Transparent header:
+  --menu-color: #ffffff;
+  --header-color: transparent;
+  --menu-item-hover-color: rgba(0, 0, 0, 0.1);
+*/
+
+:root {
+  --menu-color: #ffffff;
+  --header-color: transparent;
+  --menu-item-hover-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Do not add top padding because logo provides natural padding */
+.product .content {
+  /* padding-top: 0; */
+}
+
+/* Do not add top margin to first paragraph (Second child) because logo provides natural padding */
+.content.description :nth-child(2) {
+  /* margin-top: 0; */
+}
+
+.logo {
+  height: 175px;
+}
+
+video {
+  max-width: 90%;
+  height: auto;
+}
+
+hr {
+  width: 50%;
+  color: #ffffff;
+}
+
+.links {
+  list-style-type: none;
+  margin: 18px 0px 18px 0px;
+  padding: 0;
+  text-align: left;
+}
+
+.links li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.links li a {
+  color: #ffffff;
+}

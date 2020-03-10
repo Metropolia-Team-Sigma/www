@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <title>Sigma - Tietoja</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Team Sigma">
+  <link rel="shortcut icon" type="image/png" href="assets/vendor/sigma/sigma-logo.png" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="assets/vendor/lightbox/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/local/css/meta.css" />
+</head>
+
+<body>
+  <!-- Menu -->
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <!-- Hamburger menu layers -->
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!-- Auto-populated by menu generator -->
+    <ul id="menu"></ul>
+  </div>
+
+  <!-- Header -->
+  <header></header>
+
+  <!-- Main page -->
+  <section>
+    <div class="content">
+      <h2>Projektin tietosivu</h2>
+      <p>Tältä sivulta on löydettävissä projektin taustatietoa sekä sen metadataa ja erinäisiä tuotantodokumentteja.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="content">
+      <h2>Tekijät</h2>
+      <p>Allaoleva kuva on yhdistetty <a href="assets/local/data/authors.zip">seuraavista kuvista</a>.</p>
+      <p>
+        <a
+          class="authors-image"
+          href="assets/local/images/authors.jpg"
+          data-lightbox="banner"
+          data-title="Sigman tekijät: Linus Willner, Veeti Pere ja Jukka-Pekka Lappalainen."
+        >
+          <img src="assets/local/images/authors.jpg" alt="Projektin tekijät" />
+        </a>
+      </p>
+  </section>
+
+  <section>
+    <div class="content">
+      <h2>Tuotantopaikka</h2>
+      <p id="map"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>Sigma on <a href="https://github.com/Metropolia-Team-Sigma">Team Sigman</a> tuottama projekti.</div>
+    <div>Copyright (c) 2020 Linus Willner, Veeti Pere ja Jukka-Pekka Lappalainen.</div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <script src="assets/vendor/lightbox/js/lightbox-plus-jquery.min.js"></script>
+  <script src="assets/local/js/menuGenerator.js"></script>
+  <script src="assets/local/js/map.js"></script>
+</body>
+
+</html>

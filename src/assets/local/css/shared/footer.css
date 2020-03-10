@@ -1,0 +1,16 @@
+/* Site footer */
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: #000000;
+  padding: 40px 20px 40px 20px;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer div:not(:last-child) {
+  margin-bottom: 10px;
+}

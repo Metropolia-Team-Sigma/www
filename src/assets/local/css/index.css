@@ -1,0 +1,21 @@
+@import 'shared/global.css';
+@import 'shared/menu.css';
+@import 'shared/footer.css';
+
+:root {
+  --menu-color: #ffffff;
+  --menu-item-hover-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Header */
+
+/* FIXME: This does not fit low-width screens, potentially making the entire page redundants */
+header {
+  background-image: url('../images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: auto;
+  position: relative;
+}

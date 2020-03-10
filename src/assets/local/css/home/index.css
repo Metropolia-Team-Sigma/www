@@ -100,3 +100,7 @@ footer {
 footer a {
   color: #ffffff;
 }
+
+footer div:not(:last-child) {
+  margin-bottom: 10px;
+}

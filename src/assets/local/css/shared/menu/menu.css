@@ -1,6 +1,7 @@
 @import 'toggle.css';
 
 #menu {
+  font-family: 'Sen', sans-serif;
   display: flex;
   position: absolute;
   width: 50vw;

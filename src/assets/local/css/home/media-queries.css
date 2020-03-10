@@ -6,7 +6,7 @@
 
 /* Low screen width */
 @media screen and (max-width: 1420px) {
-  main {
+  section {
     flex-direction: column;
   }
 
@@ -17,7 +17,7 @@
 
 /* High screen width */
 @media screen and (min-width: 1420px) {
-  main {
+  section {
     flex-direction: row;
   }
 }

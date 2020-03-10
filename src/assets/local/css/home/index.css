@@ -1,20 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 @import './media-queries.css';
 @import '../shared/menu/menu.css';
 
-#banner {
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  background-image: url('../../images/banner.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: auto;
-  position: relative;
-}
+/* Global body styles */
 
 body {
   margin: 0;
@@ -28,32 +17,92 @@ body {
     rgba(252, 176, 69, 1) 100%
   );
   color: #ffffff;
-  font-family: 'Sen', sans-serif;
   text-align: center;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-    /* Flex direction is defined in media queries (Dependent on screen width) */
+/* Header */
+
+header {
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url('../../images/banner.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  position: relative;
 }
 
-p {
-  font-size: 18px;
+/* Site content*/
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  /* Flex direction is defined in media queries (Dependent on screen width) */
 }
 
 h2 {
+  font-family: 'Sen', sans-serif;
   font-size: xx-large;
+  margin: 15px;
+}
+
+
+p {
+  font-size: 18px;
+  max-width: 90%;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   flex: 1 0;
-  justify-content: space-evenly;
-  padding: 3em;
+  padding: 2em;
   text-align: match-parent;
 }
 
 video {
-  width: 100%;
+  max-width: 90%;
   height: auto;
+}
+
+hr {
+  width: 50%;
+  color: #ffffff;
+}
+
+.links {
+  list-style-type: none;
+  margin: 18px 0px 18px 0px;
+  padding: 0;
+  text-align: left;
+}
+
+.links li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.links li a {
+  color: #ffffff;
+}
+
+/* Footer */
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: #000000;
+  padding: 40px 20px 40px 20px;
+}
+
+footer a {
+  color: #ffffff;
 }

@@ -8,8 +8,6 @@
 body {
   margin: 0;
   padding: 0;
-
-  background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
     rgba(131, 58, 180, 1) 0%,
@@ -23,10 +21,6 @@ body {
 /* Header */
 
 header {
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
   background-image: url('../../images/banner.jpg');
   background-position: center;
   background-size: cover;

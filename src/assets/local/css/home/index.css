@@ -5,6 +5,10 @@
 
 /* Global body styles */
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,16 +20,19 @@ body {
   );
   color: #ffffff;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Header */
 
 header {
+  flex: auto;
   background-image: url('../../images/banner.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   width: auto;
   position: relative;
 }
@@ -91,6 +98,8 @@ hr {
 /* Footer */
 
 footer {
+  flex: auto;
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background-color: #000000;

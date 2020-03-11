@@ -21,18 +21,12 @@
   --menu-item-hover-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Do not add top padding because logo provides natural padding */
-.product .content {
-  /* padding-top: 0; */
-}
-
-/* Do not add top margin to first paragraph (Second child) because logo provides natural padding */
-.content.description :nth-child(2) {
-  /* margin-top: 0; */
+.content.logo {
+  padding: 0;
 }
 
 .logo {
-  height: 175px;
+  height: 250px;
 }
 
 video {

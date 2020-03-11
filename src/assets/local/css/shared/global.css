@@ -26,3 +26,8 @@ body {
   color: #ffffff;
   text-align: center;
 }
+
+/* Disable focus outline for videos on Chrome */
+video:focus {
+  outline: none;
+}

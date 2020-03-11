@@ -1,21 +1,56 @@
 @import 'shared/global.css';
 @import 'shared/menu.css';
+@import 'shared/content.css';
 @import 'shared/footer.css';
+
+/*
+  White header:
+  --menu-color: #000000;
+  --header-color: #ffffff;
+  --menu-item-hover-color: rgba(0, 0, 0, 0.1);
+
+  Transparent header:
+  --menu-color: #ffffff;
+  --header-color: transparent;
+  --menu-item-hover-color: rgba(0, 0, 0, 0.1);
+*/
 
 :root {
   --menu-color: #ffffff;
-  --menu-item-hover-color: rgba(255, 255, 255, 0.3);
+  --header-color: transparent;
+  --menu-item-hover-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
+.content.logo {
+  padding: 0;
+}
 
-/* FIXME: This does not fit low-width screens, potentially making the entire page redundants */
-header {
-  background-image: url('../images/banner.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: auto;
-  position: relative;
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+video {
+  max-width: 90%;
+  height: auto;
+}
+
+hr {
+  width: 50%;
+  color: #ffffff;
+}
+
+.links {
+  list-style-type: none;
+  margin: 18px 0px 18px 0px;
+  padding: 0;
+}
+
+.links li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.links li a {
+  color: #ffffff;
 }

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <title>Sigma - Encrypted Chat</title>
+  <title>Sigma - Tietoja</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="author" content="Team Sigma">
   <link rel="shortcut icon" type="image/png" href="assets/vendor/sigma/sigma-logo.png" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="assets/vendor/lightbox/css/lightbox.min.css" />
   <link rel="stylesheet" href="assets/local/css/about.css" />
 </head>
 
@@ -28,58 +33,50 @@
 
   <!-- Main page -->
   <section>
-    <div class="content logo">
-      <h2><img class="logo" src="assets/vendor/sigma/sigma-white.svg" alt="Sigma"></h2>
-    </div>
-  </section>
-
-  <section class="product">
-    <div class="content description">
-      <h2>Mikä on Sigma?</h2>
-      <p>
-        Sigma (Tyyliteltynä Σigma) on päästä päähän salattu chat-sovellus, joka takaa viesteillesi täydellisen
-        anonymiteetin. Käyttäen korkealaatuisia salausalgoritmeja ja viimeisimpiä
-        suojaustekniikoita, viestisi pysyvät turvassa nyt ja tulevaisuudessa.
-      </p>
-
-      <h2>Toimintaperiaate</h2>
-      <p>
-        Ladattuasi Sigma-sovelluksen voit luoda salasanan taakse piilotettuja chat-huoneita.
-        Chat-huoneen luotuasi saat kutsukoodin jonka voit jakaa muille Sigma-sovelluksen
-        käyttäjille, ja tietäessään salasanan he voivat liittyä huoneeseesi.
-      </p>
-
-      <h2>Turvallisuus</h2>
-      <p>
-        Viestisi salataan ennen lähetystä käyttäen alan turvallisinta standardisoitua
-        AES-256-salausta. Viestisi kulkevat vastaanottajalle asti salattuna, tehden niistä
-        lukemattoman kaikille välikäsille. Salausavain on vain viestien vastaanottajien tiedossa.
-        Salausavaimesi on myöskin sessiokohtainen, tarkoittaen että uudella käynnistyskerralla
-        lähettämiäsi viestejä ei voida enää purkaa vanhalla salausavaimella.
-      </p>
-    </div>
     <div class="content">
-      <video controls>
-        <source src="assets/local/video/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <h2>Projektin tietosivu</h2>
+      <p>Tältä sivulta on löydettävissä projektin taustatietoa sekä sen metadataa ja erinäisiä tuotantodokumentteja.</p>
     </div>
   </section>
-
-  <hr>
 
   <section>
     <div class="content">
-      <h2>Avoin lähdekoodi</h2>
+      <h2>Ikonit</h2>
       <p>
-        Sigma on avoimen lähdekoodin ohjelmisto, ja kaikki ohjelmistokoodi on yleisön tarkasteltavana GitHubissa. Alta löydät linkit eri ohjelmistokomponenttien lähdekoodiin.
+        Sivustolle tehdyt logot ja ikonit ovat löydettävissä tämän sivuston kansiosta <u>assets/vendor/sigma</u>.<br>
+        Tämän lisäksi ne ovat myöskin <a class="link" href="https://github.com/Metropolia-Team-Sigma/assets">erikseen ladattavissa GitHubista</a>.
       </p>
-      <ul class="links">
-        <li><a href="https://github.com/Metropolia-Team-Sigma/www">www</a> - Tämän sivuston lähdekoodi</li>
-        <li><a href="https://github.com/Metropolia-Team-Sigma/client">client</a> - Chat-ohjelma työpöydälle</li>
-        <li><a href="https://github.com/Metropolia-Team-Sigma/backend">backend</a> - Serverikomponentti</li>
-        <li><a href="https://github.com/Metropolia-Team-Sigma/assets">assets</a> - Projektin logot ja ikonit</li>
-      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="content">
+      <h2>Videon taustatyö</h2>
+      <p>Sivustolta löytyvän videon taustatyön dokumentit ovat ladattavissa <a class="link" href="assets/local/data/video.zip">täältä</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="content">
+      <h2>Tekijät</h2>
+      <p>Allaoleva kuva on yhdistetty <a class="link" href="assets/local/data/images.zip">seuraavista kuvista</a>.</p>
+      <p>
+        <a
+          class="authors-image"
+          href="assets/local/images/authors.jpg"
+          data-lightbox="banner"
+          data-title="Sigman tekijät: Linus Willner, Veeti Pere ja Jukka-Pekka Lappalainen."
+        >
+          <img src="assets/local/images/authors.jpg" alt="Projektin tekijät" />
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="map">
+    <div class="content">
+      <h2>Tuotantopaikan kartta</h2>
+      <p id="map"></p>
     </div>
   </section>
 
@@ -88,7 +85,14 @@
     <div>Sigma on <a href="https://github.com/Metropolia-Team-Sigma">Team Sigman</a> tuottama projekti.</div>
     <div>Copyright (c) 2020 Linus Willner, Veeti Pere ja Jukka-Pekka Lappalainen.</div>
   </footer>
+  
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <script src="assets/vendor/lightbox/js/lightbox-plus-jquery.min.js"></script>
   <script src="assets/local/js/menuGenerator.js"></script>
+  <script src="assets/local/js/map.js"></script>
 </body>
 
 </html>
